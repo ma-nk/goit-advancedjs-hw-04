@@ -1,18 +1,26 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@400;500;600&family=Montserrat:wght@400;500&family=Space+Grotesk:wght@500&display=swap');
+
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
+@import url('./gallery.css');
+@import url('./loader.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
